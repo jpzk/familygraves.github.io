@@ -1,0 +1,75 @@
+*{font-family:"Montserrat"; font-weight:400; }
+
+h1 { font-family: "Montserrat"; font-weight: 400;  margin: 0; font-size: 3.5rem; letter-spacing: 0.4rem;} 
+h2 { font-family:"Montserrat"; font-weight: 400; margin: 0; font-size:1.0rem;}
+body { margin: 0; background: #000; color: #eee}
+.menu {font-family:"Montserrat"; font-weight: 400; margin: 0; font-size: 1.0rem;}
+
+.text { 
+  padding-top: 1.0rem;
+}
+
+ul { 
+  padding: 0;
+  margin: 0px;
+  float: left;
+  width: 100%;
+}
+
+.mli {
+  list-style-type: none;
+}
+
+.sli { 
+  list-style-type: none;
+  font-size: 1.0rem;
+  display: inline;
+  padding-right: 10px;
+}
+
+#content {
+  float: left;
+  margin: 0; 
+  padding: 0;
+  margin-top: 1.0rem;
+  font-size: 1.0rem;
+}
+
+video { 
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url('backdrop.png') no-repeat; background-size: cover;  -webkit-transition: 1s opacity; transition: 1s opacity; }
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover { 
+  color: white;
+  text-decoration: underline;
+  }
+  a:visited { 
+    color: white;
+    text-decoration:none;
+    }
+
+#container {  background: rgba(0,0,0,0.0); padding: 3rem; float: left; font-size: 1.0rem; }
+.stopfade { opacity: .50; }
+
+@media screen and (max-width: 500px) { 
+}
+@media all and (max-device-width: 800px) {
+  body { background: url("backdrop.png") #000 no-repeat center center fixed; background-size: cover; }
+  #bgvid, #menu button { display: none; }
+
+}
+

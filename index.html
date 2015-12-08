@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>FAMILY GRAVES</title>
+<meta charset=utf-8>
+<meta property="og:site_name" content="FAMILY GRAVES">
+<meta property="og:locale" content="en_EN">    
+<meta name="description" content="FAMILY GRAVES band"/>
+<meta name="keywords" content="independent band music indie electro"/>
+
+<link rel="stylesheet" type="text/css" href="http://brick.a.ssl.fastly.net/Montserrat:400,700:f">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico?v=2"/>
+
+<script type="application/ld+json"> 
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://www.familygrav.es"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Person",
+  "name" : "Family Graves",
+  "url" : "http://www.familygrav.es",
+  "sameAs" : [
+    "http://www.soundcloud.com/familygraves",
+    "http://www.facebook.com/familygraves",
+    "http://www.instagram.com/familygravesband",
+    "http://www.twitter.com/family_graves"    
+  ]
+}
+</script>
+<script language="javascript" type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+<script language="javascript" type="text/javascript" src="assets/js/mustache.min.js"></script>
+<script language="javascript" type="text/javascript" src="assets/js/familygraves.js"></script>
+
+</head>
+<body onLoad="loadContent()">
+
+<div id="video"></div>
+<div id="audio"></div>
+
+<div id="container">
+<h1>FAMILY GRAVES</h1>
+<h2>your future home</h2>
+<h2>&#8210;</h2>
+<ul id="menu">
+  <li class="sli" >
+    <a href="http://soundcloud.com/familygraves" target="_blank">
+      <img width="20px" alt="SoundCloud" src="assets/images/soundcloud.svg"/>
+    </a>
+  </li>
+  <li class="sli">
+  <a href="http://www.facebook.com/familygraves" target="_blank">
+    <img width="20px" alt="Facebook" src="assets/images/facebook.svg"/>
+  </a>
+  </li>
+  <li class="sli">
+    <a href="http://www.instagram.com/familygravesband" target="_blank">
+      <img width="20px" alt="Instagram" src="assets/images/instagram.svg"/>
+    </a>
+  </li>
+  <li class="sli">
+    <a href="http://twitter.com/family_graves" target="_blank">
+      <img width="20px" alt="Instagram" src="assets/images/twitter.svg"/>
+    </a>
+  </li>
+</ul>
+
+<script id="template-aud-desktop" type="x-tmpl-mustache">
+ <audio autoplay loop>
+  <source src="assets/audio/audio-desktop.ogg" type="audio/ogg">
+  <source src="assets/audio/audio-desktop.mp3" type="audio/mpeg">
+</audio> 
+</script>
+<script id="template-aud-mobile" type="x-tmpl-mustache">
+ <audio autoplay loop>
+  <source src="assets/audio/audio-mobile.ogg" type="audio/ogg">
+  <source src="assets/audio/audio-mobile.mp3" type="audio/mpeg">
+</audio> 
+</script>
+<script id="template-vid-desktop" type="x-tmpl-mustache">
+  <video autoplay loop poster="assets/images/backdrop-desktop.png" id="bgvid">
+    <source src="assets/video/backdrop-desktop.webm" type="video/webm">
+    <source src="assets/video/backdrop-desktop.mp4" type="video/mp4">
+  </video> 
+</script>
+<script id="template-vid-mobile" type="x-tmpl-mustache">
+  <video autoplay loop poster="assets/images/backdrop-mobile.png" id="bgvid">
+    <source src="assets/video/backdrop-mobile.webm" type="video/webm">
+    <source src="assets/video/backdrop-mobile.mp4" type="video/mp4">
+  </video> 
+</script>
+<script id="template-back" type="x-tmpl-mustache">
+  <div><a href="#menu" onClick="switchMenu()">back</a></div>
+</script>
+<script id="template-about" type="x-tmpl-mustache">
+  <div class="text">
+    This is a about 
+  </div> 
+</script>
+<script id="template-videos" type="x-tmpl-mustache">
+  <div class="text">
+    This is video
+  </div> 
+</script>
+<script id="template-concerts" type="x-tmpl-mustache">
+  <div class="text">
+    Ready to book.
+  </div> 
+</script>
+<script id="template-contact" type="x-tmpl-mustache">
+  <div class="text">
+    Send us a mail
+  </div> 
+</script>
+<script id="template-imprint" type="x-tmpl-mustache">
+  <div class="text">
+  </div> 
+</script>
+
+
+<script id="template-menu" type="x-tmpl-mustache">
+<ul id="menu">
+  <li class="mli"><a onClick="fragment('about')" href="#about">about</a></li>
+  <li class="mli"><a href="http://familygraves.bandcamp.com/" target="_blank">store</a></li>
+  <li class="mli"><a onClick="fragment('concerts')" href="#concerts">concerts</a></li>
+  <li class="mli"><a onClick="fragment('contact')" href="#contact">contact</a></li>
+  <li class="mli"><a onClick="fragment('imprint')" href="#imprint">imprint</a></li>
+</ul>
+</script>
+
+<div id="content">
+</div>
+
+</div>
+</body>
+</html>
